@@ -1,3 +1,5 @@
-# Kokoa Clone 2021
+# HyukJin's Portfolio 2021
 
-HTML & CSS are so much fun!
+Just simple portfolio website with full of fun. (kakaotalk clone, supermario JS)
+
+CopyRight to sc62070 aka HyukJin
