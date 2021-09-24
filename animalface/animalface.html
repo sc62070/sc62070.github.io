@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <!-- Bootstrap CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-            crossorigin="anonymous"
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>동물상 테스트</title>
+        <meta name="title" content="동물상 테스트">
+        <meta name="subject" content="얼굴로 보는 인공지능 동물상 테스트, 나와 닮은 동물상을 찾아보세요!">
+        <meta name="keywords" content="동물상 테스트, 인공지능 동물상 테스트, 얼굴상, 얼굴상 테스트, 나와 닮은 동물, 동물상 찾기, 얼굴로 보는 동물상, 얼굴 동물, 동물얼굴, animalface, 강아지상, 고양이상, 여우상, 사슴상, 토끼상, 곰상, 공룡상, 인공지능 동물상, AI 얼굴상, AI 동물상">
+        <meta name="author" content="sc62070">
+        <link rel="stylesheet" href="style.css">
+        <link rel="canonical" href="https://sc62070.github.io/animalface/animalface.html" />
+        <meta property="og:url" content="https://sc62070.github.io/animalface/animalface.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="동물상 테스트" />
+        <meta property="og:description" content="얼굴로 보는 인공지능 동물상 테스트, 나와 닮은 동물상을 찾아보세요! 대표 동물상 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 동물상 테스트 한번 해보세요! 강아지상? 고양이상? 여우상? 사슴상? 토끼상? 곰상? 공룡상? 얼굴상 테스트를 통해 나와 닮은 동물 찾기를 할 수 있습니다."
         />
-
-        <title>동물얼굴테스트</title>
-        <link rel="stylesheet" href="style.css" />
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-614af59ae857423a"></script>
+        <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light nav-distance">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">동물상 테스트</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">준비중</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">준비중</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">준비중</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">준비중</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="p-3 container navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="https://animalface.site/">동물상 테스트</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">동물상 테스트
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="yotube-top-link" href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">조코딩 유튜브 채널</a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <section class="section">
-            <h1 class="title">인공지능 동물상 테스트 (남자)</h1>
-            <h2 class="subtitle">나는 어떤 동물과 닮았을까?</h2>
+            <h1 class="title">동물상 테스트</h1>
+            <h2 class="subtitle">얼굴로 보는 인공지능 동물상 테스트</h2>
+            <h2 class="sr-only">나는 어떤 동물과 닮았을까? 나의 동물상 찾기를 해보세요!</h2>
+            <h3 class="sr-only">대표 동물상 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을 찾아드립니다.</h3>
+            <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
+            <p class="sr-only">얼굴로 보는 인공지능 동물상 테스트, 나와 닮은 동물상을 찾아보세요! 대표 동물상 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 동물상 테스트 한번 해보세요! 강아지상? 고양이상? 여우상? 사슴상? 토끼상? 곰상? 공룡상? 얼굴상 테스트를 통해 나와 닮은 동물 찾기를 할 수 있습니다.</p>
         </section>
         <section class="github">
             <div class="container github-cover d-flex flex-row-reverse">
