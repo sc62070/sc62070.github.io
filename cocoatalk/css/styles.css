@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
-@import "cocoatalk/screens/reset.css";
-@import "cocoatalk/screens/variables.css";
+@import "reset.css";
+@import "variables.css";
 
 /* Components */
-@import "cocoatalk/css/components/status-bar.css";
-@import "cocoatalk/css/components/nav-bar.css";
-@import "cocoatalk/css/components/screen-header.css";
-@import "cocoatalk/css/components/alt-screen-header.css";
-@import "cocoatalk/css/components/user-component.css";
-@import "cocoatalk/css/components/badge.css";
-@import "cocoatalk/css/components/icon-row.css";
-@import "cocoatalk/css/components/no-mobile.css";
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/alt-screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/no-mobile.css";
 
 /* Screens */
-@import "cocoatalk/css/screens/login.css";
-@import "cocoatalk/css/screens/friends.css";
-@import "cocoatalk/css/screens/find.css";
-@import "cocoatalk/css/screens/more.css";
-@import "cocoatalk/css/screens/settings.css";
-@import "cocoatalk/css/screens/chat.css";
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
   color: #2e363e;
