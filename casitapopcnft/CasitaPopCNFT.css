@@ -551,7 +551,7 @@
 
 .u-section-4 .u-text-1 {
   text-align: start;
-  margin: 0 522px 0 0;
+  margin: 0 444px 0 0;
 }
 
 .u-section-4 .u-text-2 {
@@ -579,7 +579,7 @@
   }
 
   .u-section-4 .u-text-1 {
-    margin-right: 376px;
+    margin-right: 298px;
   }
 }
 
@@ -589,7 +589,7 @@
   }
 
   .u-section-4 .u-text-1 {
-    margin-right: 156px;
+    margin-right: 78px;
   }
 }
 
@@ -604,17 +604,13 @@
   }
 
   .u-section-4 .u-text-1 {
-    margin-right: 16px;
+    margin-right: 0;
   }
 }
 
 @media (max-width: 575px) {
   .u-section-4 .u-group-1 {
     width: 340px;
-  }
-
-  .u-section-4 .u-text-1 {
-    margin-right: 0;
   }
 } .u-section-5 {
   background-image: none;
