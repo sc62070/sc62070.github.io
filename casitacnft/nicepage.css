@@ -35521,87 +35521,64 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 138px;
+  min-height: 155px;
 }
 
 .u-header .u-image-1 {
-  width: 58px;
-  height: 58px;
-  margin: 40px auto 0 30px;
+  width: 67px;
+  height: 67px;
+  margin: 36px 30px 0 auto;
+}
+
+.u-header .u-image-2 {
+  width: 66px;
+  height: 66px;
+  margin: -67px 127px 0 auto;
+}
+
+.u-header .u-image-3 {
+  width: 66px;
+  height: 66px;
+  margin: -62px auto 57px 30px;
 }
 
 .u-header .u-logo-image-1 {
   width: 100%;
   height: 100%;
 }
-
-.u-header .u-image-2 {
-  width: 47px;
-  height: 33px;
-  margin: -45px 30px 52px auto;
-}
 @media (max-width: 1199px) {
+  .u-header .u-sheet-1 {
+    min-height: 163px;
+  }
+
   .u-header .u-image-1 {
-    width: 90px;
-    height: 90px;
-    margin-top: 23px;
+    width: 67px;
+    height: 67px;
   }
 
   .u-header .u-image-2 {
-    width: 47px;
-    height: 33px;
-    margin-top: -46px;
+    width: 66px;
+    margin-top: -67px;
+    margin-right: 127px;
+  }
+
+  .u-header .u-image-3 {
+    margin-top: -62px;
+    margin-bottom: 57px;
   }
 }
 @media (max-width: 991px) {
-  .u-header .u-image-1 {
-    width: 64px;
-    height: 64px;
-    margin-top: 37px;
-    margin-left: 43px;
+  .u-header .u-image-2 {
+    width: 66px;
+    margin-top: -67px;
   }
 
-  .u-header .u-image-2 {
-    width: 63px;
-    height: 41px;
-    margin-top: -53px;
-    margin-right: 37px;
-    margin-bottom: 48px;
+  .u-header .u-image-3 {
+    margin-top: -62px;
   }
 }
-@media (max-width: 767px) {
-  .u-header .u-image-1 {
-    margin-left: 42px;
-  }
 
-  .u-header .u-image-2 {
-    width: 63px;
-    height: 41px;
-    margin-top: -52px;
-    margin-right: 42px;
-    margin-bottom: 49px;
-  }
-}
-@media (max-width: 575px) {
-  .u-header .u-sheet-1 {
-    min-height: 116px;
-  }
 
-  .u-header .u-image-1 {
-    width: 48px;
-    height: 48px;
-    margin-top: 34px;
-    margin-left: 24px;
-  }
-
-  .u-header .u-image-2 {
-    width: 46px;
-    height: 30px;
-    margin-top: -39px;
-    margin-right: 24px;
-    margin-bottom: 43px;
-  }
-}
  .u-footer {
   background-image: none;
 }
