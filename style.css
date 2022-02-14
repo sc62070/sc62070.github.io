@@ -312,13 +312,13 @@ a.social-button {
 	display: inline-block;
 	margin: 0 auto;
 }
-a.link-facebook,a.link-twitter,a.link-codepen,a.link-linkedin,a.link-instagram
+a.link-facebook,a.link-github,a.link-codepen,a.link-linkedin,a.link-instagram
 {
   transition:0.4s ease;
 }
-a.link-twitter
+a.link-github
 {
-  color:#1DA1F2;
+  color:#000000;
 }
 a.link-facebook
 {
@@ -337,8 +337,8 @@ a.link-facebook:hover{
 	color: #fff;
 }
 
-a.link-twitter:hover{
-	background-color: #1DA1F2;
+a.link-github:hover{
+	background-color: #000000;
 	color: #fff;
 }
 
