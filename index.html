@@ -1,211 +1,216 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Hyukjin's Portfolio</title>
-  <title>HyukJin</title>
-  <meta name="description" content="Web designer and front-end developer">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Portfolio Template">
+    <meta name="author" content="Suvrat Jain">
+    <title>HyukJin Portfolio</title>
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> 
+          <a class="navbar-brand" href="#"><i class="fa fa-globe"></i></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li> 
+          </ul> 
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<body>
-  <!-- navbar header -->
-  <div class="nav-header">
-    <div class="nav-brand">
-      <img src="./images/small me.jpeg">
-    </div>
-    <i class="fa fa-bars fa-3x"></i>
-    <div class="header-links">
-      <ul>
-        <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
-        <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
-        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-      </ul>
-    </div>
+<div class="container-fluid splash" id="splash">
+  <div class="container">
+    <img src="./images/me me.jpeg" alt="Portrait of Mr. Roboto" class="profile-image"> 
+    <h1>Heyy!</h1> 
+    <h1 class="intro-text"><span class="lead" id="typed">I am a </span></h1>
+    <span class="continue"><a href="#about"><i class="fa fa-angle-down"></i></a></span>
   </div>
-  <!-- end navbar header -->
-
-  <!-- sidebar slider -->
-  <div class="nav-screen">
-    <i class="fa fa-times fa-3x"></i>
-    <div class="nav-container">
-      <div class="nav-links">
-        <ul id='myMenu'>
-          <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-          <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
-          <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- end navbar slider -->
-
-  <!-- begin fullpage -->
-
-  <div id="fullpage">
-
-    <!-- begin section -->
-
-    <div class="section aboutme" data-anchor="aboutme">
-      <div class="opaque-bg animated fadeInDown">
-        <h1 style="color:white">Hyuk-Jin<span style="color:#FF6363">/</span>Choi</h1>
-        <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
-      </div>
-      <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
-    </div>
-    <!-- end section -->
-
-    <!-- begin section -->
-
-    <div class="section" data-anchor="skills">
-      <div class="content">
-        <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
-        <p class="wow fadeInDown" data-wow-delay="0.2s">
-			Hi, Im HyukJin Choi! Excellent web application developer that have both ambition and passion to be the best!</p>
-
-        <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
-          <div class="skillbar clearfix " data-percent="80%">
-            <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
-            <div class="skillbar-bar" style="background: #DD1E2F;"></div>
-            <div class="skill-bar-percent">80%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="80%">
-            <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
-            <div class="skillbar-bar" style="background: #EBB035;"></div>
-            <div class="skill-bar-percent">80%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="70%">
-            <div class="skillbar-title" style="background: #218559;"><span>Javascript</span></div>
-            <div class="skillbar-bar" style="background: #218559;"></div>
-            <div class="skill-bar-percent">70%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="45%">
-            <div class="skillbar-title" style="background: #6840D4;"><span>Java</span></div>
-            <div class="skillbar-bar" style="background: #6840D4;"></div>
-            <div class="skill-bar-percent">45%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="45%">
-            <div class="skillbar-title" style="background: #06A2CB;"><span>MySQL</span></div>
-            <div class="skillbar-bar" style="background: #06A2CB;"></div>
-            <div class="skill-bar-percent">45%</div>
-          </div> <!-- End Skill Bar -->
-
-          <div class="skillbar clearfix " data-percent="50%">
-            <div class="skillbar-title" style="background: #AB4DD2;"><span>ReactJS</span></div>
-            <div class="skillbar-bar" style="background: #AB4DD2;"></div>
-            <div class="skill-bar-percent">50%</div>
-          </div> <!-- End Skill Bar -->
-        </div>
-      </div>
-    </div>
-    <!-- end section -->
-
-    <!-- begin section -->
-
-    <div class="section" data-anchor="projects">
-      <div class="content-slide">
-        <div class="slide">
-          <h1 class="wow fadeInDown" data-wow-delay="0.2s" href="https://sc62070.github.io/casitacnft/index">CasitaCNFT</h1>
-          <p class="wow fadeInDown" data-wow-delay="0.2s" href="https://sc62070.github.io/casitacnft/index">First NFT Project</p>
-          <img class="wow fadeInUp" data-wow-delay="0.2s" src="./images/casitacnft.jpg" href="https://sc62070.github.io/casitacnft/index" />
-        </div>
-        <div class="slide">
-          <h1 href="https://sc62070.github.io/af/animalface.html">Animal Face</h1>
-          <p>Identify which animal you are</p>
-          <img src="./images/af.png" href="https://sc62070.github.io/af/animalface.html">
-        </div>
-        <div class="slide">
-          <h1>Cocoatalk</h1>
-          <p>Kakaotalk Clone</p>
-          <img src="./images/kokoaclone.png">
-        </div>
-        <div class="slide">
-          <h1>Nwitter</h1>
-          <p>Twitter Clone</p>
-          <img src="./images/nwitter.png">
-        </div>
-      </div>
-    </div>
-    <!-- end section -->
-
-    <!-- begin section -->
-
-    <div class="section" data-anchor="contact">
-      <div class="content wow fadeInDown" data-wow-delay="0.2s">
-        <h1>CONTACT ME</h1>
-        <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
-        <br>
-        <div class="contact-form">
-
-          <div id="form-messages"></div>
-          <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
-              <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
+</div>
+        <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About Me</h2>
+                    <hr class="star-light">
+                </div>
             </div>
-
-            <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
-              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p class="content-text" style="text-align:justify;">Hey there! I am a junior software developer based in Mumbai, India. I work with some of the popular front end technologies to create beautiful websites that get noticed. I seek experience to gain more knowledge in the web development field.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="content-text">If you are in need of a beautiful simple website, I'm your guy. I look forward to talking to you soon!</p>
+             </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center contact-button">
+                    <a href="#contact" class="btn btn-lg btn-outline">
+                        <i class="fa fa-envelope"></i> Contact Me
+                    </a>
+                </div>
             </div>
-
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
-              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
-            </div>
-
-            <div class="hidden">
-              <input type="text" class="form-control" id="human" name="human" placeholder="">
-            </div>
-            <div class="wow fadeInUp" data-wow-delay="1s">
-              <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
-            </div>
-          </form>
-          <br>
         </div>
-      </div>
-    </div>
-    <!-- end section -->
-<!--kakao adfit-->
-<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-WGDtPYmksVMXRXAD" data-ad-width="320"
-data-ad-height="100"></ins>
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    <!-- begin section -->
+    </section>
+<!-- Portfolio -->
+    <div class="container-fluid portfolio-container-holder content-section" id="portfolio">
+		<div class="portfolio-container container">
+			<h1 class="text-center">My Portfolio</h1>
+      <hr class="star-portfolio">
+			<div class="row">
+				
+				<div class="col-md-6 col-xs-12 col-sm-6 portfolio-card-holder">
+					<div class=" portfolio-card">
+						<img src="https://cdn2.hubspot.net/hubfs/145335/responsive-vs-adaptive-design-compressor.jpg" alt="Portfolio" class="img-responsive portfolio-img">
 
-    <div class="section fp-auto-height" >
-      <div class="footer">
-        <p>CONNECT WITH ME</p>
-        <div class="social-links">
-          <span><a href="https://www.linkedin.com/in/hyukjinchoitechchuck" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
-          <span><a target="_blank" href="https://www.instagram.com/st99_0" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></span>
-          <span><a href="https://github.com/sc62070" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
-          <span><a href="https://codepen.io/sc62070"><i class="fa fa-codepen fa-2x"></i></a></span>
-        </div>
-      </div>
-    </div>
-    <!-- end section -->
+						<div class="portfolio-img-desc">
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>			
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6 portfolio-card-holder">
+					<div class=" portfolio-card">
+						<img src="https://cdn2.hubspot.net/hubfs/145335/responsive-vs-adaptive-design-compressor.jpg" alt="Portfolio" class="img-responsive portfolio-img">
 
-  </div>
-  <!-- end fullpage -->
-</body>
-<!-- partial -->
-  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script><script  src="./script.js"></script>
+						<div class="portfolio-img-desc">
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>			
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6 portfolio-card-holder">
+					<div class=" portfolio-card">
+						<img src="https://cdn2.hubspot.net/hubfs/145335/responsive-vs-adaptive-design-compressor.jpg" alt="Portfolio" class="img-responsive portfolio-img">
 
-</body>
+						<div class="portfolio-img-desc">
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>			
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6 portfolio-card-holder">
+					<div class=" portfolio-card">
+						<img src="https://cdn2.hubspot.net/hubfs/145335/responsive-vs-adaptive-design-compressor.jpg" alt="Portfolio" class="img-responsive portfolio-img">
+
+						<div class="portfolio-img-desc">
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>			
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6 portfolio-card-holder">
+					<div class=" portfolio-card">
+						<img src="https://cdn2.hubspot.net/hubfs/145335/responsive-vs-adaptive-design-compressor.jpg" alt="Portfolio" class="img-responsive portfolio-img">
+
+						<div class="portfolio-img-desc">
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>			
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6 portfolio-card-holder">
+					<div class=" portfolio-card">
+						<img src="https://cdn2.hubspot.net/hubfs/145335/responsive-vs-adaptive-design-compressor.jpg" alt="Portfolio" class="img-responsive portfolio-img">
+
+						<div class="portfolio-img-desc">
+							<p>Lorem ipsum dolor sit amet</p>
+						</div>			
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<!-- Contact form -->
+	<div class="container-fluid contact-me-container content-section" id="contact">
+		<div class="container">
+			<h1 class="intro-text text-center">Contact Me</h1>
+      <hr class="star-light">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="fa fa-user"></i></div>
+							<input type="text" class="form-control" id="name" placeholder="Name">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-at"></i></div>
+							<input type="text" class="form-control" id="email" placeholder="Email ID">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon"><i class="fa fa-phone"></i></div>
+							<input type="text" class="form-control" id="phone" placeholder="Phone Number">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-12">
+					<textarea class="form-control" rows="5" placeholder="Message"></textarea>
+				</div>
+			</div>
+
+			<div class="text-center">
+				<button class="btn btn-default submit-button btn-lg btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+			</div>
+		</div>
+	</div>
+<!-- Footer -->
+	<footer>
+		<div class="container footer-container">
+			<div class="row footer-row">
+				<div class="col-xs-12 col-sm-6 col-md-6 text-center">
+			<h4 class="text-center">Find me here</h4>
+				 	<address>
+					 	<strong><i class="fa fa-location-arrow"></i> Monsters Inc.</strong><br>Lorem ipsum dolor, sir amet,<br>Mumbai, India 400050<br><br>
+					 	<a  class="tel" href="tel:9999988888" type="tel"><i class="fa fa-mobile"></i><span> +91 9876543210</span></a>
+					</address>
+				</div>
+
+				<div class="col-xs-12 col-md-6 col-sm-6 social-section">
+					<div class="text-center">
+						<h4 class="text-center">Also, I can be found here</h4>
+				<div class="text-center social-buttons">
+						<a href="#" class="btn btn-default btn-lg social-button link-facebook"><i class="fa fa-facebook"></i>
+						</a>
+
+						<a href="https://codepen.io/simplysuvi/" class="btn btn-default btn-lg social-button link-codepen"><i class="fa fa-codepen"></i>
+						</a>
+
+						<a href="#" class="btn btn-default btn-lg social-button link-twitter"><i class="fa fa-twitter"></i>
+						</a>
+
+						<a href="https://www.linkedin.com/in/simplysuvi" class="btn btn-default btn-lg social-button link-linkedin"><i class="fa fa-linkedin"></i>
+						</a>
+          <a href="https://instagram.com/simplysuvi" class="btn btn-default btn-lg social-button link-instagram"><i class="fa fa-instagram"></i>
+						</a>
+					</div><hr class="footer-hr">
+            <h4 class="author">Made with <i class="fa fa-heart"></i> by <strong>Suvrat Jain</strong></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
