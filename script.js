@@ -224,7 +224,7 @@ $( window ).resize( function() {
 $(function(){
 
         $("#typed").typed({
-            strings: ["web developer","geek","human being"], //Strings to display when typing
+            strings: ["web app developer","geek","South Korean"], //Strings to display when typing
             typeSpeed: 40,
             backDelay: 600,
             loop: true,
