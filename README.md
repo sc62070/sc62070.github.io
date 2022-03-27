@@ -6,6 +6,7 @@ Just simple portfolio website with full of fun.
  2. animal face test (Jo coding)
  3. nwitter (Nomadcoder)
  4. CasitaCNFT (Casita)
+ 5. My Newest game app (coming soon)
 
 some works are not uploaded for various reasons.
 
