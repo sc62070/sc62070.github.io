@@ -22,8 +22,8 @@ function saveScore(popCount) {
 function loadScore() {
   popCount = localStorage.getItem("count");
   localStorage.getItem("count") === null
-    ? (score.innerText = "Press P and record your score!")
-    : (score.innerText = `Your POP Count : ${localStorage.getItem("count")}`);
+    ? (score.innerText = "Press P or touch to start! ")
+    : (score.innerText = `Your 국밥 Count : ${localStorage.getItem("count")}`);
 }
 
 function keyDown(event) {
@@ -59,7 +59,7 @@ function keyUp(event) {
   } else if (event.code === "KeyS") {
     popCat.src = "images/normal.png";
     popCount++;
-    score.innerText = `Your POP Count : ${popCount}`;
+    score.innerText = `Your 국밥 Count : ${popCount}`;
     saveScore(popCount);
   }
 }
@@ -73,7 +73,7 @@ function touchStart() {
 function touchEnd() {
   popCat.src = "images/normal.png";
   popCount++;
-  score.innerText = `Your POP Count : ${popCount}`;
+  score.innerText = `Your 국밥 Count : ${popCount}`;
   saveScore(popCount);
 }
 
@@ -85,7 +85,7 @@ function init() {
   resetBtn.addEventListener("click", () => {
     localStorage.removeItem("count");
     popCount = 0;
-    score.innerText = "Press P and record your score!";
+    score.innerText = "Press P or touch to start!";
   });
   loadScore();
 }
