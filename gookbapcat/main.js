@@ -54,7 +54,7 @@ function keyUp(event) {
   if (event.code === "KeyP") {
     popCat.src = "images/normal.png";
     popCount++;
-    score.innerText = `Your POP Count : ${popCount}`;
+    score.innerText = `Your 국밥 Count : ${popCount}`;
     saveScore(popCount);
   } else if (event.code === "KeyS") {
     popCat.src = "images/normal.png";
