@@ -1,4 +1,4 @@
- // portfolio
+// portfolio
  $('.gallery ul li a').click(function() {
      var itemID = $(this).attr('href');
      $('.gallery ul').addClass('item_open');
