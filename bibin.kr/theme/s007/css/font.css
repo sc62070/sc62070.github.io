@@ -1,0 +1,211 @@
+/*Font: Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Font: Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Font: Pretendard*/
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../../gh/Project-Noonnu/noonfonts_2107_1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../../gh/Project-Noonnu/noonfonts_2107_1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../../gh/Project-Noonnu/noonfonts_2107_1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../../gh/Project-Noonnu/noonfonts_2107_1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../../gh/Project-Noonnu/noonfonts_2107_1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../../gh/Project-Noonnu/noonfonts_2107_1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../../gh/Project-Noonnu/noonfonts_2107_1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../../gh/Project-Noonnu/noonfonts_2107_1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../../gh/Project-Noonnu/noonfonts_2107_1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*body*/
+.body {
+	font-family: 'Pretendard', 'malgun gothic', Arial, sans-serif !important;
+    letter-spacing: -0.04em;
+}
+div, h1, h2, h3, h4, h5, h6, p {
+    letter-spacing: inherit;
+    font-family: inherit;
+}
+
+/*font*/
+.f_mon {
+	font-family: 'Montserrat', sans-serif !important;
+}
+.f_robo {
+	font-family: "Roboto", sans-serif !important;
+}
+
+/*dft*/
+.dft {
+    word-break: keep-all;
+}
+h1.dft {
+    font-size: 45px;
+    color: #000;
+    line-height: 1em;
+    text-transform: none;
+}
+h1.dft.bigsize {
+    font-size: 55px;
+}
+h2.dft {
+    font-size: 35px;
+    color: #000;
+    line-height: 1.2em;
+    text-transform: none;
+}
+h3.dft {
+    font-size: 28px;
+    color: #000;
+    line-height: 1.4em;
+    text-transform: none;
+}
+h4.dft {
+    font-size: 24px;
+    color: #000;
+    line-height: 1.4em;
+    text-transform: none;
+}
+h5.dft {
+    font-size: 20px;
+    color: #000;
+    line-height: 1.6em;
+    text-transform: none;
+}
+h6.dft {
+    font-size: 14px;
+    color: #000;
+    line-height: 1.4em;
+    text-transform: none;
+}
+p.dft {
+    font-size: 17px;
+    line-height: 1.6em;
+    color: #000;
+}
+@media (max-width:1200px) and (min-width:768px){
+    h1.dft,
+    h1.dft.bigsize {
+        font-size: 35px;
+    }
+    h2.dft {
+        font-size: 25px;
+    }
+    h3.dft {
+        font-size: 24px;
+    }
+    h4.dft {
+        font-size: 21px;
+    }
+    h5.dft {
+        font-size: 18px;
+    }
+    h6.dft {
+        font-size: 14px;
+    }
+    p.dft {
+        font-size: 15px;
+    }
+}
+@media (max-width:768px){
+    h1.dft,
+    h1.dft.bigsize {
+        font-size: 27px;
+    }
+    h2.dft {
+        font-size: 22px;
+    }
+    h3.dft {
+        font-size: 20px;
+    }
+    h4.dft {
+        font-size: 18px;
+    }
+    h5.dft {
+        font-size: 16px;
+    }
+    h6.dft {
+        font-size: 13px;
+    }
+    p.dft {
+        font-size: 14px;
+    }
+}
+/* word-keep */
+.word-keep {
+    word-break: keep-all;
+}
+.word-break {
+    word-break: break-all;
+}
+/* font-weight */
+.font-Thin {
+    font-weight: 100 !important;
+}
+.font-ExtraLight {
+    font-weight: 200 !important;
+}
+.font-Light {
+    font-weight: 300 !important;
+}
+.font-Regular {
+    font-weight: 400 !important;
+}
+.font-Medium {
+    font-weight: 500 !important;
+}
+.font-Bold {
+    font-weight: 600 !important;
+}
+.font-ExtraBold {
+    font-weight: 700 !important;
+}
+.font-Heavy {
+    font-weight: 800 !important;
+}
+.font-Black {
+    font-weight: 900 !important;
+}

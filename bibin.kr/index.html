@@ -1,0 +1,2052 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta property="og:type" content="website">
+	<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+	<title>bibin :: 비빈</title>
+	<!--[if lte IE 8]>
+	<script src="http://bibin.kr/js/html5.js"></script>
+	<![endif]-->
+	<script>
+	// 자바스크립트에서 사용하는 전역변수 선언
+	var g5_url       = "http://bibin.kr";
+	var g5_bbs_url   = "http://bibin.kr/bbs";
+	var g5_is_member = "";
+	var g5_is_admin  = "";
+	var g5_is_mobile = "";
+	var g5_bo_table  = "";
+	var g5_sca       = "";
+	var g5_editor    = "";
+	var g5_cookie_domain = "";
+	</script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.menu.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/wrest.js"></script>
+	<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+<!-- Web Fonts  -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- amchart 추가 kjh 20161129-->
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/amcharts/samples/style.css" type="text/css">
+<script src="plugin/mongtree/admin/assets/vendor/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
+<script src="plugin/mongtree/admin/assets/vendor/amcharts/amcharts/serial.js" type="text/javascript"></script>
+<script src="plugin/mongtree/admin/assets/vendor/amcharts/amcharts/pie.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/amcharts/amcharts/radar.js"></script>
+<!-- <script src="http://bibin.kr/plugin/mongtree/admin/assets/vendor/amcharts/amcharts/plugins/export/export.min.js"></script> -->
+<script src="plugin/mongtree/admin/assets/vendor/amcharts/amcharts/themes/chalk.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/amcharts/amcharts/themes/dark.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/amcharts/amcharts/themes/patterns.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/amcharts/amcharts/themes/light.js"></script>
+<!-- <script src="http://bibin.kr/plugin/mongtree/admin/assets/vendor/amcharts/amcharts/themes/none.js"></script>-->
+<!-- sweetalert 추가-->
+<!-- 
+	sweetalert 
+	http://demo.bluew.net/plugin/mongtree/admin/assets/vendor/sweetalert-master/
+	swal("Here's a message!")
+	swal("Here's a message!", "It's pretty, isn't it?")
+	swal("Good job!", "You clicked the button!", "success")
+	sweetAlert("Oops...", "Something went wrong!", "error");
+	swal({   title: "Are you sure?",   text: "You will not be able to recover this imaginary file!",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Yes, delete it!",   closeOnConfirm: false }, function(){   swal("Deleted!", "Your imaginary file has been deleted.", "success"); });
+	swal({   title: "Are you sure?",   text: "You will not be able to recover this imaginary file!",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Yes, delete it!",   cancelButtonText: "No, cancel plx!",   closeOnConfirm: false,   closeOnCancel: false }, function(isConfirm){   if (isConfirm) {     swal("Deleted!", "Your imaginary file has been deleted.", "success");   } else {     swal("Cancelled", "Your imaginary file is safe :)", "error");   } });
+	swal({   title: "Sweet!",   text: "Here's a custom image.",   imageUrl: "images/thumbs-up.jpg" });
+	swal({   title: "HTML <small>Title</small>!",   text: "A custom <span style="color:#F8BB86">html<span> message.",   html: true });
+	swal({   title: "Auto close alert!",   text: "I will close in 2 seconds.",   timer: 2000,   showConfirmButton: false });
+	swal({   title: "An input!",   text: "Write something interesting:",   type: "input",   showCancelButton: true,   closeOnConfirm: false,   animation: "slide-from-top",   inputPlaceholder: "Write something" }, function(inputValue){   if (inputValue === false) return false;      if (inputValue === "") {     swal.showInputError("You need to write something!");     return false   }      swal("Nice!", "You wrote: " + inputValue, "success"); });
+	swal({   title: "Ajax request example",   text: "Submit to run ajax request",   type: "info",   showCancelButton: true,   closeOnConfirm: false,   showLoaderOnConfirm: true, }, function(){   setTimeout(function(){     swal("Ajax request finished!");   }, 2000); });
+-->
+<script src="plugin/mongtree/admin/assets/vendor/sweetalert-master/dist/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/sweetalert-master/dist/sweetalert.css">
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="plugin/mongtree/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="plugin/mongtree/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="plugin/mongtree/vendor/animate/animate.min.css">
+<link rel="stylesheet" href="plugin/mongtree/vendor/simple-line-icons/css/simple-line-icons.min.css">
+<link rel="stylesheet" href="plugin/mongtree/vendor/owl.carousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="plugin/mongtree/vendor/owl.carousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="plugin/mongtree/vendor/magnific-popup/magnific-popup.min.css">
+<!-- Admin Extension Skin CSS -->
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/stylesheets/skins/extension.css">
+<!-- Theme CSS -->
+<link rel="stylesheet" href="plugin/mongtree/css/theme.css">
+<link rel="stylesheet" href="plugin/mongtree/css/theme-elements.css">
+<link rel="stylesheet" href="plugin/mongtree/css/theme-blog.css">
+<link rel="stylesheet" href="plugin/mongtree/css/theme-shop.css">
+<link rel="stylesheet" href="http://bibin.kr/plugin/mongtree/css/theme-animate.css">
+<!-- Admin Extension Specific Page Vendor CSS -->
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+<!-- Specific Page Vendor CSS -->
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/jquery-ui/jquery-ui.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/jquery-ui/jquery-ui.theme.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/morris_js/morris.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/select2/css/select2.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/select2-bootstrap-theme/select2-bootstrap.min.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/bootstrap-colorpicker/css/bootstrap-colorpicker.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/bootstrap-timepicker/css/bootstrap-timepicker.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/dropzone/basic.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/dropzone/dropzone.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/bootstrap-markdown/css/bootstrap-markdown.min.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/summernote/summernote.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/codemirror/lib/codemirror.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/codemirror/theme/monokai.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />	
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/pnotify/pnotify.custom.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/jqvmap/jqvmap.css" />		
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/fullcalendar/fullcalendar.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/fullcalendar/fullcalendar.print.css" media="print" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/owl.carousel/assets/owl.carousel.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/owl.carousel/assets/owl.theme.default.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/chartist/chartist.min.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/elusive-icons/css/elusive-icons.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/simple-line-icons/css/simple-line-icons.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/meteocons/css/meteocons.css" />
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/vendor/jstree/themes/default/style.css" />
+<!-- Admin Extension CSS -->
+<link rel="stylesheet" href="plugin/mongtree/admin/assets/stylesheets/theme-admin-extension.css">
+<!-- Current Page CSS -->
+<link rel="stylesheet" href="plugin/mongtree/vendor/rs-plugin/css/settings.css">
+<link rel="stylesheet" href="plugin/mongtree/vendor/rs-plugin/css/layers.css">
+<link rel="stylesheet" href="plugin/mongtree/vendor/rs-plugin/css/navigation.css">
+<link rel="stylesheet" href="plugin/mongtree/vendor/circle-flip-slideshow/css/component.css">
+<!-- Skin CSS -->
+<link rel="stylesheet" href="plugin/mongtree/css/skins/default.css">
+<!-- 테마 custom CSS -->
+<link rel="stylesheet" href="theme/s007/css/slick.css">
+<link rel="stylesheet" href="theme/s007/css/font.css">
+<link rel="stylesheet" href="theme/s007/css/default.css">
+<!-- Theme Custom CSS -->
+<!-- <link rel="stylesheet" href="http://bibin.kr/adm/adm-theme-custom.css"> -->
+<!-- Head Libs -->
+<script src="plugin/mongtree/vendor/modernizr/modernizr.min.js"></script>
+</head>
+<body>
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <!-- <h2>팝업레이어 알림</h2> -->
+</div>
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+	$(window).resize(function(){
+		w_height = $(window).height()
+		w_width = $(window).width()
+		b_top = $('body').offset().top
+		if(w_width<992){
+			$('#hd_pop .hd_pops .hd_pops_con').css('height',w_height/3*2)
+			//$('#hd_pop').css("top",b_top)
+		}else{
+			return false;
+		}
+	}).resize()
+});
+</script>
+<!-- } 팝업레이어 끝 -->
+<div class="body" id="s007">
+	<!--개인정보취급처리방침 / 이용약관-->
+<link rel="stylesheet" href="theme/s007/index/privacy.css">
+<!--개인정보취급방침-->
+<div class="modal fade privacy" id="privacy" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="defaultModalLabel">
+                        개인정보 취급방침
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="privacy" class="p-md">
+                        <p align=center><b>
+                            리애누나는 한국대표 <br/>
+                            개인정보 처리방침에 대한 내용을 입력하십시오.</b></p>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="theme/s007/index/privacy.css">
+<!--이용약관-->
+<div class="modal fade privacy" id="privacy2" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="defaultModalLabel">
+                        이용약관
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="privacy" class="p-md">
+                        <p align=center><b>서비스 이용약관에 대한 내용을 입력하십시오.</b></p>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--//개인정보취급처리방침 / 이용약관-->
+	<!--모바일 네비게이션-->
+	<div class="mobile-nav hidden-md hidden-lg">
+		<div class="mobile-nav-wrapper">
+			<!--mmenu-->
+			<ul class="mobile-side-menu">
+    <!-- Mobile Navigation toggle button -->
+    <span class="mmenu-toggle-btn">
+        <span class="lines_bar"></span>
+    </span>
+    <!-- //Mobile Navigation toggle button -->
+    <div class="header-logo pt-none text-center">
+        <a href="index.html">
+            <img style="height:100px;width:100px;" src="theme/s007/img/logo-default.png" alt="">
+        </a>
+	</div>
+    <!--menu-->
+    <nav>
+	<ul class="nav nav-pills" id="mainNav">
+		<li><a class="scroll-to" href="#ms1">bibin</a></li>
+		<li><a class="scroll-to" href="#ms3">서비스</a></li>
+		<li><a class="scroll-to" href="#ms6">미디어</a></li>
+		<!-- <li><a class="scroll-to" href="#ms7">프로젝트</a></li> -->
+		<li><a class="scroll-to" href="#ms8">진행방식</a></li>
+		<li><a class="scroll-to" href="#ms10">제휴문의</a></li>
+	</ul>
+</nav>    <!--//menu-->
+    <div class="snsBox">
+        <ul class="list-unstyled mb-none clearfix">
+            <li class="first act"><a href="https://www.instagram.com/bibinews_/" target="_blank"><img src="theme/s007/img/snsi1.png" alt=""><span>공식 <br> 인스타그램</span></a></li>
+            <li><a href="https://pf.kakao.com/_Txmlgb" target="_blank"><img src="theme/s007/img/snsi3.png" alt=""><span>카카오톡 <br> 비지니스</span></a></li>
+            <li><a href="https://lin.ee/dtONZhW" target="_blank"><img src="theme/s007/img/snsi4.png" alt=""><span>공식 <br> LINE</span></a></li>
+        </ul>
+    </div>
+</ul>			<!--//mmenu-->
+		</div>
+	</div>
+	<div id="mobile-menu-overlay"></div>
+	<!--//모바일 네비게이션-->
+	<header id="header" class="header-narrow header-shape" data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 1, "stickySetTop": "-0", "stickyChangeLogo": false}'>
+		<div class="header-body">
+			<div class="container">
+				<div class="c_wrp m_wrp v_m">
+					<div class="logoBox">
+						<a href="index.html">
+							<img style="height:100px;width:100px;" src="theme/s007/img/logo-default.png" alt="">
+						</a>
+					</div>
+					<div class="linkBox">
+						<!--Navigation-->
+						<div class="navWrp hidden-xs hidden-sm">
+							<nav>
+	<ul class="nav nav-pills" id="mainNav">
+		<li><a class="scroll-to" href="#ms1">bibin</a></li>
+		<li><a class="scroll-to" href="#ms3">서비스</a></li>
+		<li><a class="scroll-to" href="#ms6">미디어</a></li>
+		<!-- <li><a class="scroll-to" href="#ms7">프로젝트</a></li> -->
+		<li><a class="scroll-to" href="#ms8">진행방식</a></li>
+		<li><a class="scroll-to" href="#ms10">제휴문의</a></li>
+	</ul>
+</nav>						</div>
+						<!--//Navigation-->
+						<!-- Mobile Navigation toggle button -->
+						<span class="mmenu-toggle-btn hidden-md hidden-lg">
+							<span class="lines_bar"></span>
+						</span>
+						<!-- //Mobile Navigation toggle button -->
+					</div>
+					<div class="snsBox hidden-xs hidden-sm">
+						<ul class="list-unstyled mb-none">
+							<li class="first act"><a  href="https://www.instagram.com/bibinews_/" target="_blank"><img src="theme/s007/img/snsi1.png" alt=""><span>공식 인스타그램</span></a></li>
+							<li><a href="https://pf.kakao.com/_Txmlgb" target="_blank"><img src="theme/s007/img/snsi3.png" alt=""><span>카카오톡</span></a></li>
+							<li><a href="https://lin.ee/dtONZhW" target="_blank"><img src="theme/s007/img/snsi4.png" alt=""><span>공식 라인</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<div role="main" class="main">
+	<div id="visual">
+        <div class="c_wrp m_wrp v_m">
+            <div>
+                <div class="container">
+                    <div class="tcon">
+                        <div class="visual_txt" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="2s">
+                            <span><img src="theme/s007/img/visual_txt1.png" alt="">
+                            <span class="txtshow txtshow1"></span></span>
+                            <span><img src="theme/s007/img/visual_txt2.png" alt="">
+                            <span class="txtshow txtshow2"></span></span>
+                        </div>
+                        <h2 class="conbox conbox_mini dft mb-none" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                            <strong class="font-Heavy"><span>일본 진출 두려워하지마세요.</span></strong> <br>
+                            <strong class="font-Heavy"><span>bibin이 도와드리겠습니다 !</span></strong>
+                        </h2>
+                        <h4 class="conbox conbox_mini dft mb-none" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                            <strong>한국에서'만'</strong>이 아닌 <strong>일본에서'도'</strong>를 이념으로 하여, <br class="hid-max">
+                            한국기업의 일본진출을 지원하는 광고대리점입니다.
+                        </h4>
+                        <div class="conbox btnWrp" data-appear-animation="fadeInUp" data-appear-animation-delay="400" data-appear-animation-duration="1.4s">
+                            <a class="btnItem scroll-to" href="#ms10">제휴문의 바로가기 <span>+</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="hidden-md hidden-lg" src="theme/s007/img/visual_mo.png" alt="">
+    </div>
+	<div id="ms1" class="sec_dvd sec_dvd_xs">
+        <div class="container">
+            <div class="c_wrp v_m t_fx">
+                <div class="lt">
+                    <h5 class="dft mb-none font-Light lsp" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="0.7s">
+                        What We <strong>Do?</strong>
+                    </h5>
+                    <div class="conbox conbox_xxs bibin_sym" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s"><img src="theme/s007/img/bibin_sym.png" alt=""></div>
+                    <h2 class="conbox conbox_xxs dft mb-none font-Bold" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                        bibin은 높은 매체 전문성을 바탕으로 <br>
+                        다양한 광고매체를 진행합니다.
+                    </h2>
+                    <h5 class="conbox conbox_mini dft mb-none c_gray font-Light" data-appear-animation="fadeInUp" data-appear-animation-delay="400" data-appear-animation-duration="1.4s">
+                        SNS전성기인 현대에 맞는 인플루언서 마케팅을 전문으로 하고 있습니다. <br class="hid-max">
+                        체계적인 시스템과 빠르고 정확한 컨텍으로 차별화 된 마케팅을 통해 <br class="hid-max">
+                        설립날로부터 광고주님들과 함께 성장하는 파트너로 만나고 있습니다.
+                    </h5>
+                </div>
+                <div class="rt text-center">
+                    <div class="phoneImg" data-appear-animation="fadeInRight" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                        <img src="theme/s007/img/phoneImg.png" alt="">
+                        <div class="bciWrp">
+                            <ul id="bci-slide" class="list-unstyled mb-none">
+                                                                <li>
+                                    <h3 class="dft mb-none"><span>인스타 마케팅</span></h3>
+                                    <div class="item"><img src="theme/s007/img/snsRo1.png" alt=""></div>
+                                </li>
+                                <li>
+                                    <h3 class="dft mb-none"><span>틱톡 마케팅</span></h3>
+                                    <div class="item"><img src="theme/s007/img/snsRo2.png" alt=""></div>
+                                </li>
+                                <li>
+                                    <h3 class="dft mb-none"><span>유튜브 마케팅</span></h3>
+                                    <div class="item"><img src="theme/s007/img/snsRo3.png" alt=""></div>
+                                </li>
+                                                                <li>
+                                    <h3 class="dft mb-none"><span>인스타 마케팅</span></h3>
+                                    <div class="item"><img src="theme/s007/img/snsRo1.png" alt=""></div>
+                                </li>
+                                <li>
+                                    <h3 class="dft mb-none"><span>틱톡 마케팅</span></h3>
+                                    <div class="item"><img src="theme/s007/img/snsRo2.png" alt=""></div>
+                                </li>
+                                <li>
+                                    <h3 class="dft mb-none"><span>유튜브 마케팅</span></h3>
+                                    <div class="item"><img src="theme/s007/img/snsRo3.png" alt=""></div>
+                                </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="ms2" class="sec_dvd">
+        <div class="container">
+            <div class="mtit text-center">
+                <h5 class="dft font-Light lsp text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="0.7s">
+                    <strong>Why</strong> bibin?
+                </h5>
+                <h1 class="dft mb-none font-ExtraLight text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                    왜 많은 업체들이 <br>
+                    <strong class="c_pt font-Heavy">bibin 마케팅</strong>을 찾고 있을까요?
+                </h1>
+                <h4 class="dft mb-none font-ExtraLight text-light conbox conbox_xxs" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                    검증된 인플루언서 / 크리에이터들과 함께하는 bibin 마케팅으로 <br class="hidden-xs">
+                    <strong>브랜드 가치의 향상과 인지 확대를 동시에 시킬 수 있습니다.</strong>
+                </h4>
+            </div>
+            <div class="conbox">
+                <ul class="list-unstyled mb-none row">
+                    <li class="col-sm-3 col-xs-6" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                        <img src="theme/s007/img/thum1.jpg" alt="">
+                    </li>
+                    <li class="col-sm-3 col-xs-6" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                        <img src="theme/s007/img/thum2.jpg" alt="">
+                    </li>
+                    <li class="col-sm-3 col-xs-6" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                        <img src="theme/s007/img/thum3.jpg" alt="">
+                    </li>
+                    <li class="col-sm-3 col-xs-6" data-appear-animation="fadeInUp" data-appear-animation-delay="400" data-appear-animation-duration="1.4s">
+                        <img src="theme/s007/img/thum4.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<div id="ms3" class="sec_dvd">
+        <div class="container">
+            <div class="mtit text-center">
+                <h5 class="dft font-Light lsp" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="0.7s">
+                    <strong>Influencer</strong> Marketing
+                </h5>
+                <h1 class="dft mb-none font-ExtraLight" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                    <strong class="font-Heavy">인플루언서</strong> 마케팅
+                </h1>
+                <h4 class="dft mb-none font-Light conbox conbox_xxs c_gray" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                    고객사 맞춤 인플루언서 캐스팅 & <br class="only-mobile"> 
+                    인플루언서 체험 후기 SNS 노출
+                </h4>
+            </div>
+            <ul class="list-unstyled mb-none">
+                <li class="conbox infoWrp info2">
+                    <div class="ibox text-center">
+                        <div class="img" data-appear-animation="fadeInLeft" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                            <img class="snsSyms" src="theme/s007/img/snsSyms.png" alt="" data-appear-animation="zoomIn" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/infoImg2.png" alt="">
+                            <span class="deco deco1"></span>
+                            <span class="deco deco2"></span>
+                            <span class="deco deco3"></span>
+                            <span class="deco deco4"></span>
+                        </div>
+                    </div>
+                    <div class="tbox">
+                        <h1 class="dft mb-none font-Heavy" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <span class="num c_sky">01</span> <br>
+                            인플루언서 기프팅
+                        </h1>
+                        <p class="dft mb-none flat conbox conbox_xxs" data-appear-animation="fadeInUp" data-appear-animation-delay="150" data-appear-animation-duration="1.4s">
+                            <span>인스타그램</span>
+                            <span>틱톡</span>
+                        </p>
+                        <h4 class="dft mb-none conbox conbox_xxs" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                            인플루언서에게 제품을 보내고 체험 소감을  <br class="hidden-md">
+                            SNS에 노출하도록 하는 마케팅
+                        </h4>
+                        <ul class="list-unstyled mb-none infoList conbox conbox_xxs">
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> UGC 콘텐츠의 생성
+                                </h5>
+                            </li>
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> 해시태그의 성장
+                                </h5>
+                            </li>
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="400" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> 신빙성이 높은 SNS 상의 댓글 증가
+                                </h5>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="conbox infoWrp info1">
+                    <div class="tbox">
+                        <h1 class="dft mb-none font-Heavy" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <span class="num c_sky">02</span> <br>
+                            인플루언서 캐스팅
+                        </h1>
+                        <p class="dft mb-none flat conbox conbox_xxs" data-appear-animation="fadeInUp" data-appear-animation-delay="150" data-appear-animation-duration="1.4s">
+                            <span>인스타그램</span>
+                            <span>틱톡</span>
+                        </p>
+                        <h4 class="dft mb-none conbox conbox_xxs" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                            인플루언서 체험단 캐스팅으로 브랜드, <br class="hidden-md">
+                            상품에 맞는 효과적이고 합리적인 마케팅
+                        </h4>
+                        <ul class="list-unstyled mb-none infoList conbox conbox_xxs">
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> 인플루언서 캐스팅
+                                </h5>
+                            </li>
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> 상품 인지도 확대
+                                </h5>
+                            </li>
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> 광고 예산 내에서의 브랜딩 극대화
+                                </h5>
+                            </li>
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="400" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> SNS 광고의 최적화
+                                </h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ibox text-center">
+                        <div class="img" data-appear-animation="fadeInRight" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/infoImg1.png" alt="">
+                            <span class="deco deco1"></span>
+                            <span class="deco deco2"></span>
+                            <span class="deco deco3"></span>
+                            <img class="snsSyms" src="theme/s007/img/snsSyms.png" alt="" data-appear-animation="zoomIn" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                        </div>
+                    </div>
+                </li>
+                <li class="conbox infoWrp info3">
+                    <div class="ibox text-center">
+                        <div class="img" data-appear-animation="fadeInLeft" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/infoImg3.png" alt="">
+                            <span class="deco deco1"></span>
+                            <span class="deco deco2"></span>
+                            <span class="deco deco3"></span>
+                        </div>
+                    </div>
+                    <div class="tbox">
+                        <h1 class="dft mb-none font-Heavy" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <span class="num c_sky">03</span> <br>
+                            YouTube 캐스팅
+                        </h1>
+                        <p class="dft mb-none flat conbox conbox_xxs" data-appear-animation="fadeInUp" data-appear-animation-delay="150" data-appear-animation-duration="1.4s">
+                            <span>유튜브</span>
+                        </p>
+                        <h4 class="dft mb-none conbox conbox_xxs" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                            유튜브 체험단 캐스팅으로 브랜드, 상품에 맞는 <br class="hidden-md">
+                            효과적이고 합리적인 영상 마케팅
+                        </h4>
+                        <ul class="list-unstyled mb-none infoList conbox conbox_xxs">
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> 상품 인지의 폭넓은 확대
+                                </h5>
+                            </li>
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> 다양한 타겟에 맞게 어필
+                                </h5>
+                            </li>
+                            <li data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                                <h5 class="dft mb-none c_gray font-Light">
+                                    <strong class="c_sky">#</strong> 영상을 활용함으로 상품에 대한 자세한 설명이 가능
+                                </h5>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<div id="ms4" class="sec_dvd pb-none">
+        <div class="container">
+            <div class="mtit text-center">
+                <h1 class="dft mb-none font-Heavy" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                    <span class="c_sky">카테고리 별</span> <br class="only-mobile">
+                    인플루언서 캐스팅
+                </h1>
+                <h4 class="dft mb-none font-Light conbox conbox_xxs c_gray" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                    다양한 카테고리 별 인플루언서 캐스팅이 가능해 <br class="hid-max">
+                    브랜드 이미지에 적절한 인스타그램, 틱톡, 유튜브 마케팅 진행이 가능합니다. 
+                </h4>
+            </div>
+        </div>
+        <div class="conbox">
+            <div class="float">
+                <div class="container">
+                    <ul id="cst2" class="list-unstyled mb-none">
+                        <li>
+                            <div class="item">
+                                <img src="theme/s007/img/mkicon1.png" alt="">
+                                <h5 class="dft mb-none">인물</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="theme/s007/img/mkicon2.png" alt="">
+                                <h5 class="dft mb-none">리뷰</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="theme/s007/img/mkicon3.png" alt="">
+                                <h5 class="dft mb-none">패션</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="theme/s007/img/mkicon4.png" alt="">
+                                <h5 class="dft mb-none">라이프스타일</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="theme/s007/img/mkicon5.png" alt="">
+                                <h5 class="dft mb-none">음식</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="theme/s007/img/mkicon6.png" alt="">
+                                <h5 class="dft mb-none">반려동물</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul id="cst1" class="list-unstyled mb-none">
+                                <li>
+                    <div class="item"><img src="theme/s007/img/mkt1.png" alt=""></div>
+                </li>
+                                <li>
+                    <div class="item"><img src="theme/s007/img/mkt2.png" alt=""></div>
+                </li>
+                                <li>
+                    <div class="item"><img src="theme/s007/img/mkt3.png" alt=""></div>
+                </li>
+                                <li>
+                    <div class="item"><img src="theme/s007/img/mkt4.png" alt=""></div>
+                </li>
+                                <li>
+                    <div class="item"><img src="theme/s007/img/mkt5.png" alt=""></div>
+                </li>
+                                <li>
+                    <div class="item"><img src="theme/s007/img/mkt6.png" alt=""></div>
+                </li>
+                            </ul>
+        </div>
+    </div>
+	<div id="ms5" class="sec_dvd">
+        <div class="container">
+            <div class="mtit text-center">
+                <h1 class="dft mb-none font-Heavy" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                    <span class="c_sky">인플루언서PR 전문 특화</span> 서비스
+                </h1>
+                <h4 class="dft mb-none font-Light conbox conbox_xxs c_gray" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                    bibin은 인플루언서PR에 전문 특화된 서비스를 전개하고 있으며 모든 클라이언트들과 성심성의껏 함께 하고 있습니다. <br class="hid-max">
+                    가격, 게시물 내용, 실행 후 서포트 체제까지의 모든 면에서 높은 평가를 받고 있습니다.
+                </h4>
+            </div>
+            <div class="conbox">
+                <ul class="list-unstyled mb-none row">
+                    <li class="col-sm-4" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="2s">
+                        <div class="m_wrp v_m">
+                            <div class="icon">
+                                <img src="theme/s007/img/si1.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h2 class="dft mb-none font-Heavy">
+                                    <strong class="font-Heavy"><span>100개 업체와</span></strong> <br class="hidden-xs">
+                                    함께 한 실적
+                                </h2>
+                                <p class="dft mb-none font-Light c_gray">
+                                    함께한 클라이언트 수는 한·일 합산 100사 이상이며 <br class="hid-max">
+                                     1,000건 이상의 캐스팅 실적을 이룬 <br class="hid-max">
+                                    신뢰할 수 있는 비지니스 파트너입니다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" class="col-sm-4" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="2s">
+                        <div class="m_wrp v_m">
+                            <div class="icon">
+                                <img src="theme/s007/img/si2.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h2 class="dft mb-none font-Heavy">
+                                    <strong class="font-Heavy"><span>6,000명 이상의</span></strong> <br class="hidden-xs">
+                                    인플루언서
+                                </h2>
+                                <p class="dft mb-none font-Light c_gray">
+                                    캐스팅 가능한 인플루언서는 총 6,000명 이상이며  <br class="hid-max">클라이언트와 잘 맞는 인플루언서를 소개 해드립니다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4" class="col-sm-4" data-appear-animation="fadeInUp" data-appear-animation-delay="500" data-appear-animation-duration="2s">
+                        <div class="m_wrp v_m">
+                            <div class="icon">
+                                <img src="theme/s007/img/si3.png" alt="">
+                            </div>
+                            <div class="txt">
+                                <h2 class="dft mb-none font-Heavy">
+                                    <strong class="font-Heavy"><span>One by One 방식의</span></strong> <br class="hidden-xs">
+                                    직접 캐스팅
+                                </h2>
+                                <p class="dft mb-none font-Light c_gray">
+                                    자사 공식 LINE과 같은 네트워크를 이용하여 <br class="hid-max">
+                                    인플루언서 1명 1명과 직접 연락을 하기 때문에 <br class="hid-max">
+                                    보다 정확하고 확실하게 전달이 가능합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<div id="ms6" class="sec_dvd sec_dvd_mini">
+        <div class="container">
+            <div class="mtit text-center">
+                <h1 class="dft mb-none font-Heavy" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                    bibin <span class="c_sky">공식 미디어</span>
+                </h1>
+            </div>
+        </div>
+        <div class="conbox conbox_mini">
+            <div class="links">
+                <div class="container">
+                    <ul class="list-unstyled mb-none clearfix text-center">
+                        <li class="col-xs-4 p-none">
+                            <a href="https://www.instagram.com/bibinews_/" target="_blank" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="2s">
+                                <h3 class="dft mb-none font-ExtraBold">공식 <br class="only-mobile"> 인스타그램</h3>
+                                <p class="dft mb-none font-Light">
+                                    팔로워 6.4만명을 보유 <br class="hid-max">
+                                    한국 스킨케어에 특화된 계정을 운영 중
+                                </p>
+                                <div class="btnWrp conbox conbox_xxs">
+                                    <span class="btnItem scroll-to">바로가기 <span>+</span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-xs-4 p-none">
+                            <a href="https://pf.kakao.com/_Txmlgb" target="_blank" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="2s">
+                                <h3 class="dft mb-none font-ExtraBold">카카오톡 <br class="only-mobile"> 비지니스</h3>
+                                <p class="dft mb-none font-Light"> </p>
+                                <div class="btnWrp conbox conbox_xxs">
+                                    <span class="btnItem scroll-to">바로가기 <span>+</span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-xs-4 p-none">
+                            <a href="https://lin.ee/dtONZhW" target="_blank" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="2s">
+                                <h3 class="dft mb-none font-ExtraBold">공식 <br class="only-mobile"> LINE</h3>
+                                <p class="dft mb-none font-Light"> </p>
+                                <div class="btnWrp conbox conbox_xxs">
+                                    <span class="btnItem scroll-to">바로가기 <span>+</span></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- <div id="ms6" class="sec_dvd sec_dvd_mini">
+        <div class="container">
+            <div class="mtit text-center">
+                <h1 class="dft mb-none font-Heavy text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                    bibin <span class="c_pt">공식 미디어</span>
+                </h1>
+            </div>
+        </div>
+        <div class="conbox conbox_mini">
+            <div class="links">
+                <div class="container">
+                    <ul class="list-unstyled mb-none clearfix text-center">
+                        <li class="col-xs-12 p-none">
+                            <a href="https://www.instagram.com/bibinews_/" target="_blank" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="2s">
+                                <h3 class="dft mb-none text-light font-ExtraBold">공식 인스타그램</h3>
+                                <h5 class="dft mb-none text-light font-Light">
+                                    팔로워 6.4만명을 보유 
+                                    한국 스킨케어에 특화된 계정을 운영 중
+                                </h5>
+                                <div class="btnWrp conbox conbox_xxs">
+                                    <span class="btnItem w scroll-to">바로가기 <span>+</span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-xs-4 p-none">
+                            <a href="https://bibinews.jp" target="_blank" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="2s">
+                                <h4 class="dft mb-none text-light font-ExtraBold">한국 코스메틱 <br class="hidden-md hidden-lg">리뷰 미디어</h4>
+                                <p class="dft mb-none text-light font-Light">
+                                    인터뷰 형식으로 [인플루언서들이 실제로 써보고  <br class="hid-max">
+                                    느낀 한국 코스메틱 찐 리뷰]를 소개
+                                </p>
+                                <div class="btnWrp">
+                                    <span class="btnItem w scroll-to">바로가기 <span>+</span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-xs-4 p-none">
+                            <a href="https://www.instagram.com/madeinme_japan/" target="_blank" data-appear-animation="fadeInUp" data-appear-animation-delay="500" data-appear-animation-duration="2s">
+                                <h4 class="dft mb-none text-light font-ExtraBold">브랜드 계정 및 <br class="hidden-md hidden-lg">공식 LINE@</h4>
+                                <p class="dft mb-none text-light font-Light">
+                                    자사 한국 스킨케어 브랜드 계정을 작성하여, 상품  <br class="hid-max">
+                                    이미지나스킨케어에 관련한 정보를 발신, 동시에  <br class="hid-max">
+                                    등록자 수 475명 이상의 공식 LINE으로 쿠폰 배포중
+                                </p>
+                                <div class="btnWrp">
+                                    <span class="btnItem w scroll-to">바로가기 <span>+</span></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+	<!--프로젝트-->
+		<!--//프로젝트-->
+	<div id="ms8" class="sec_dvd">
+        <div class="container">
+            <div class="mtit text-center">
+                <h5 class="dft font-Light lsp text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="0.7s">
+                    Marketing <strong>Process</strong>
+                </h5>
+                <h1 class="dft mb-none font-ExtraLight text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                    마케팅 <strong class="font-Heavy">진행방식</strong>
+                </h1>
+            </div>
+            <div class="conbox conbox_lg">
+                <div class="prc prcty3">
+                    <div class="prcTit">
+                        <h3 class="dft mb-none font-Light text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <strong>인플루언서 기프팅</strong> 진행방식
+                        </h3>
+                    </div>
+                    <ul class="list-unstyled mb-none row prcList prcList2 prc1 text-center">
+                        <li class="col-md-3 col-sm-6 prc1">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc2_1.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        오리엔시트 제출
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        이미지에 맞는 인플루언서를  <br class="hid-max">
+                                        저희 회사에서 픽업,  <br class="hid-max">
+                                        리스트를 작성하여 제출합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6 prc2">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc2_2.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        오리엔시트 확인
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        오리엔시트에는 업로드 시  <br class="hid-max"> 필요한 정보들을 기재하여  <br class="hid-max"> 제출해주시기 바랍니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6 prc3">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="500" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc2_3.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        주소 리스트 제출
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        여부가 확인 되어  <br class="hid-max"> 
+                                        확정이 된 인플루언서들  <br class="hid-max"> 
+                                        주소 정보를 공유 드립니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6 prc4">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="700" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc2_4.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        제품 발송
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        리스트에 기재된 주소를 보고  <br class="hid-max"> 
+                                        인플루언서에게  <br class="hid-max"> 
+                                        제품을 발송 해주세요.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6 prc8">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="700" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc2_8.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        게시물 리포트 제출
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        게시물URL을 정리한  <br class="hid-max">
+                                        리포트를 제출하겠습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li class="col-md-3 col-sm-6 prc7">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="500" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="http://bibin.kr/theme/s007/img/prc2_7.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        타이업 투고의 승인
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        스텔스 마케팅을 방지하기 위해 <br class="hid-max"> 
+                                        메이커님께서 타이업 투고를 <br class="hid-max"> 
+                                        승인해 주셔야 합니다. <br>
+                                        (※ 나중에 해설하겠습니다)
+                                    </p>
+                                </div>
+                            </div>
+                        </li> -->
+                        <li class="col-md-3 col-sm-6 prc6">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc2_6.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        투고
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        귀사가 설정한 투고 기일에  <br class="hid-max"> 
+                                        인플루언서들이  <br class="hid-max"> 
+                                        게시물을 올립니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6 prc5">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc2_5.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        게시물 작성
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        제품을 받은 인플루언서들이  <br class="hid-max">
+                                        게시글(초안)을 작성합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conbox conbox_lg">
+                <div class="prc prcty1">
+                    <div class="prcTit">
+                        <h3 class="dft mb-none font-Light text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <strong>인플루언서 캐스팅</strong> 진행방식
+                        </h3>
+                    </div>
+                    <ul class="list-unstyled mb-none row prcList prcList1 prc1 text-center">
+                        <li class="col-md-4 col-sm-6 prc1">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc1.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        전문PL
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        요구사항을 분석한 다음 맞춤 제안을 <br class="hid-max">
+                                        기획하여 캐스팅 방향성 까지를 결정
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4 col-sm-6 prc2">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc2.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        인플루언서 리스트 작성
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        방향성이 확정되면 이미지에 맞는 <br class="hid-max">
+                                        당사 보유 인플루언서 리스트를 작성합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4 col-sm-6 prc3">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="500" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc3.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        인플루언서 선정
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        전달받은 인플루언서 리스트를 확인하여  <br class="hid-max">
+                                        귀사 측에서 직접 인플루언서를 선정합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4 col-sm-6 prc6">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="500" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc6.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        결과 리포트
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        게시 인사이트 정보로 효과 측정을  <br class="hid-max">
+                                        진행하며, 측정된 정보는 공유됩니다. <br class="hid-max">
+                                        이는 추후 시책으로 활용합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4 col-sm-6 prc5">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc5.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        마케팅 진행
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        초안을 확인하여 문제가 없을 시  <br class="hid-max">
+                                        인플루언서들이 게시물 게시합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4 col-sm-6 prc4">
+                            <div class="item m_wrp v_m" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                                <div class="img"><img src="theme/s007/img/prc4.png" alt=""></div>
+                                <div class="txt">
+                                    <h3 class="dft mb-none font-ExtraBold">
+                                        인플루언서 확정
+                                    </h3>
+                                    <p class="dft mb-none">
+                                        인플루언서 참가여부를 확인하여,  <br class="hid-max">
+                                        실행 내용과 금액에 대한 인식 착요가  <br class="hid-max">
+                                        없도록 신중하게 진행·확정합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conbox conbox_lg">
+                <div class="prc prcty2">
+                    <div class="prcTit">
+                        <h3 class="dft mb-none font-Light text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <strong>유튜브 캐스팅</strong> 진행방식
+                        </h3>
+                    </div>
+                    <ul class="list-unstyled mb-none clearfix text-center roadMap">
+                        <li class="col-md-2 p-none road1">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">01</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    오리엔 시트 <br>
+                                                    제출
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road2">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">02</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    구성안 <br>
+                                                    제출
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road3">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">03</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    구성안 <br>
+                                                    확인
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road4">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="400" data-appear-animation-duration="1.4s">04</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    구성안 <br>
+                                                    FIX
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road5">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="500" data-appear-animation-duration="1.4s">05</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    촬영
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road6">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="600" data-appear-animation-duration="1.4s">06</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    게시물 <br>
+                                                    제출
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road12">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="1200" data-appear-animation-duration="1.4s">12</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <img src="theme/s007/img/ytIcon.png" alt="">
+                                                <h3 class="dft mb-none mt-xs font-Heavy text-light">
+                                                    공개
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road11">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="1100" data-appear-animation-duration="1.4s">11</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    영상 FIX
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road10">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="1000" data-appear-animation-duration="1.4s">10</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    수정 영상 <br>
+                                                    확인
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road9">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="900" data-appear-animation-duration="1.4s">09</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    수정 영상 <br>
+                                                    제출
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road8">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="800" data-appear-animation-duration="1.4s">08</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    피드백 <br>
+                                                    전달
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-2 p-none road7">
+                            <div class="item">
+                                <div class="num">
+                                    <span data-appear-animation="flipInY" data-appear-animation-delay="700" data-appear-animation-duration="1.4s">07</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="txt">
+                                        <div class="c_wrp m_wrp v_m">
+                                            <div>
+                                                <h5 class="dft mb-none font-ExtraBold">
+                                                    게시물 <br>
+                                                    확인
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="ms9" class="sec_dvd">
+        <div class="container">
+            <div class="mtit text-center">
+                <h1 class="dft mb-none font-Heavy" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                    파트너십
+                </h1>
+                <h4 class="dft mb-none font-Light conbox conbox_xxs c_gray" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                    bibin은 다양한 인플루언서 / 크리에이터 선별 및 서비스 제공을 통해 <br class="hid-max">
+                    다양한 협력사와 함께 성장해나갑니다. 
+                </h4>
+            </div>
+            <div class="conbox">
+                <ul class="list-unstyled mb-none row ptnList">
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn9.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn13.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn2.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn3.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn11.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn1.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn4.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn5.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn6.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn7.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn8.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn10.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn12.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn14.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn15.png" alt="">
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+                            <img src="theme/s007/img/ptn16.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<div id="ms10" class="sec_dvd">
+        <div class="container">
+            <ul class="list-unstyled mb-none row">
+                <li class="col-md-5">
+                    <div class="mtit">
+                        <h5 class="dft font-Light lsp text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="0.7s">
+                            <strong>Contact</strong> Us
+                        </h5>
+                        <h1 class="dft mb-none font-Heavy text-light" data-appear-animation="fadeInUp" data-appear-animation-delay="200" data-appear-animation-duration="1.4s">
+                             <strong class="c_pt font-Heavy">bibin</strong>과 함께라면 <br>
+                             더이상 어렵지 않습니다.
+                        </h1>
+                        <h4 class="dft mb-none c_lgray conbox conbox_mini" data-appear-animation="fadeInUp" data-appear-animation-delay="300" data-appear-animation-duration="1.4s">
+                            여러분의 성장을 함께할 <br>
+                            열정적인 비지니스 파트너가 되어드립니다. <br>
+                            언제든 문의주시면 신속히 답변드립니다.
+                        </h4>
+                    </div>
+                </li>
+                <li class="col-md-7">
+                    <form name="req_form" id="req_form" method="post" onsubmit="return fwrite_submit(this);" class="form">
+<input type="hidden" name="bo_table" id="bo_table" value="online">
+	<ul class="list-unstyled mb-none row">
+		<li class="col-sm-6" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+			<div class="form_item">
+				<label for="wr_2">업체명 <strong class="imp c_pt">*</strong></label>
+				<input type="text" class="form-control" id="wr_subject" name="wr_subject" required="">
+			</div>
+		</li>
+		<li class="col-sm-6" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+			<div class="form_item">
+				<label for="wr_1">연락처 <strong class="imp c_pt">*</strong></label>
+				<input type="tel" class="form-control" id="wr_1" name="wr_1" required="">
+			</div>
+		</li>
+		<li class="col-sm-12" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+			<div class="form_item">
+				<label for="txtc">문의사항</label>
+				<textarea class="form-control" name="wr_content" id="wr_content" rows="4"></textarea>
+			</div>
+		</li>
+		<li class="col-sm-12" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+			<div class="checkbox-custom checkbox-default">
+				<p class="dft mb-none text-light">
+					<input type="checkbox" id="chk1" name="chk1" required="">
+					<label for="chk1">개인정보취급방침에 동의합니다.</label>
+					<span class="open_agr text-sm ml-sm" data-toggle="modal" data-target="#privacy">전문보기</span>
+				</p>
+			</div>
+		</li>
+		<li class="col-sm-12" data-appear-animation="fadeInUp" data-appear-animation-delay="100" data-appear-animation-duration="1.4s">
+			<input type="submit" class="smt" value="문의완료">
+		</li>
+	</ul>
+</form>
+<script language="javascript">
+		var cellPhone = document.getElementById('wr_1');
+		cellPhone.onkeyup = function (event) {
+			event = event || window.event;
+			var _val = this.value.trim();
+			this.value = autoHypenPhone(_val);
+		};
+		function fwrite_submit(f)
+		{	
+				$.ajax({
+					url: "theme/s007/skin/latest/mt_online_main/latest.update.html",
+					type: 'POST',
+					data: $("#req_form").serialize(),
+					success: function(re){
+						if(re=="Y"){
+							alert("간편상담이 접수되었습니다.");
+							f.reset();
+						}else if(re=="N"){
+							swal({   
+								title: "권한오류",   
+								text: "글을 쓸 권한이 없습니다.",  
+								type: "error",
+									showCancelButton: false,   
+									confirmButtonColor: "",
+									confirmButtonText: "확인",   
+									closeOnConfirm: false
+								});
+							f.reset();
+						}
+					 }
+				});
+			return false;
+		}
+</script>                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+		<footer class="short pt-lg" id="footer">
+		<div class="container">
+			<div class="c_wrp v_m">
+				<div class="lft">
+					<h4 class="dft mb-none font-Bold text-light">bibin co.,Ltd</h4>
+					<h6 class="dft mb-none">
+						<span class="fcon"><strong class="text-light">Address</strong>  3-21-15toutoakasaka Bld.2A, Akasaka , Minato Ku, Tokyo 107-0052, Japan </span>
+						<!-- <span class="fcon"><strong class="text-light">사업자등록번호</strong>  206-45-11241</span>  -->
+						<span class="fcon"><strong class="text-light">대표 </strong>  NAKA DAISUKE</span>
+						<!-- <span class="fcon"><strong class="text-light">Tel</strong>  1234-5678</span>  -->
+					</h6>
+					<h6 class="dft mb-none text-light">
+						Copyright ⓒ <span class="c_pt">bibin co.,Ltd</span> ALL RIGHTS RESERVED.
+					</h6>
+				</div>
+				<div class="rt">
+					<h5 class="dft mb-none text-light">
+						<span data-toggle="modal" data-target="#privacy">개인정보처리방침</span>
+					</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+<!-- jquery -->
+<script src="plugin/mongtree/vendor/jquery/jquery.min.js"></script>
+<!--slick.min-->
+<script src="theme/s007/js/slick.min.js"></script>
+<script>
+     //Beauty Class
+     $('#bci-slide').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+		centerPadding: '10px',
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        fade: false,
+        adaptiveHeight: true,
+        infinite: true,
+        draggable: false,
+        useTransform: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        focusOnSelect: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				arrows: false,
+				settings: {
+					slidesToShow: 3,
+					centerMode: true,
+					centerPadding: '10px',
+				}
+			}
+		]
+     });
+     //cst1
+     $('#cst1').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        centerMode: true,
+		centerPadding: '10px',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        fade: false,
+        adaptiveHeight: true,
+        infinite: true,
+        draggable: false,
+        useTransform: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        focusOnSelect: false,
+		responsive: [
+			{
+				breakpoint: 2500,
+				arrows: false,
+				settings: {
+					slidesToShow: 3,
+					centerMode: true,
+					centerPadding: '10px',
+        			draggable: false,
+				}
+			},
+			{
+				breakpoint: 1200,
+				arrows: false,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: '10px',
+        			draggable: false,
+				}
+			}
+		]
+     });
+     //cst2
+     $('#cst2').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        centerMode: true,
+		centerPadding: '10px',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        fade: false,
+        adaptiveHeight: true,
+        infinite: true,
+        draggable: false,
+        useTransform: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        focusOnSelect: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				arrows: false,
+				settings: {
+					slidesToShow: 3,
+					centerMode: true,
+					centerPadding: '10px',
+        			draggable: false,
+				}
+			},
+			{
+				breakpoint: 768,
+				arrows: false,
+				settings: {
+					slidesToShow: 5,
+					centerMode: true,
+					centerPadding: '10px',
+        			draggable: false,
+				}
+			},
+			{
+				breakpoint: 500,
+				arrows: false,
+				settings: {
+					slidesToShow: 3,
+					centerMode: true,
+					centerPadding: '10px',
+        			draggable: false,
+				}
+			}
+		]
+     });
+</script>
+<!-- skrollr-->
+<script src="theme/s007/js/skrollr.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		var s = skrollr.init({
+			edgeStrategy: 'set',
+			forceHeight: false,
+			easing: {
+				WTF: Math.random,
+				inverted: function(p) {
+					return 1-p;
+				}
+			},
+			mobileCheck: function(){
+				if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+					// mobile device
+				}
+			}
+		});
+	});
+</script>
+<!-- Vendor -->
+<script src="plugin/mongtree/vendor/jquery.appear/jquery.appear.min.js"></script>
+<script src="plugin/mongtree/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="plugin/mongtree/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+<script src="plugin/mongtree/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugin/mongtree/vendor/common/common.min.js"></script>
+<script src="plugin/mongtree/vendor/jquery.validation/jquery.validation.min.js"></script>
+<script src="plugin/mongtree/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+<script src="plugin/mongtree/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+<script src="plugin/mongtree/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+<script src="plugin/mongtree/vendor/isotope/jquery.isotope.min.js"></script>
+<script src="plugin/mongtree/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="plugin/mongtree/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="plugin/mongtree/vendor/vide/vide.min.js"></script>
+<!-- Theme Base, Components and Settings -->
+<script src="plugin/mongtree/js/theme.js"></script>
+<!-- Admin Extension Specific Page Vendor -->
+<script src="plugin/mongtree/admin/assets/vendor/jquery-ui/jquery-ui.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqueryui-touch-punch/jqueryui-touch-punch.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jquery-appear/jquery-appear.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/flot/jquery.flot.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/flot.tooltip/flot.tooltip.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/flot/jquery.flot.pie.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/flot/jquery.flot.categories.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/flot/jquery.flot.resize.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jquery-sparkline/jquery-sparkline.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/raphael/raphael.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/morris_js/morris.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/gauge/gauge.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/snap_svg/snap.svg.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/liquid-meter/liquid.meter.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqvmap/jquery.vmap.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqvmap/maps/continents/jquery.vmap.africa.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqvmap/maps/continents/jquery.vmap.asia.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqvmap/maps/continents/jquery.vmap.australia.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jqvmap/maps/continents/jquery.vmap_south-america.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/select2/js/select2.js"></script>		
+<script src="plugin/mongtree/admin/assets/vendor/jquery-maskedinput/jquery.maskedinput.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-timepicker/bootstrap-timepicker.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/fuelux/js/spinner.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/dropzone/dropzone.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-markdown/js/markdown.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-markdown/js/to-markdown.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-markdown/js/bootstrap-markdown.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/codemirror/lib/codemirror.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/codemirror/addon/selection/active-line.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/codemirror/addon/edit/matchbrackets.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/codemirror/mode/javascript/javascript.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/codemirror/mode/xml/xml.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/codemirror/mode/css/css.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/summernote/summernote.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-maxlength/bootstrap-maxlength.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/ios7-switch/ios7-switch.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-confirmation/bootstrap-confirmation.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jquery-validation/jquery.validate.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-wizard/jquery.bootstrap.wizard.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/pnotify/pnotify.custom.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/autosize/autosize.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
+<script src="plugin/mongtree/admin/assets/vendor/gmaps/gmaps.js"></script>
+<script src="plugin/mongtree/admin/assets/javascripts/maps/snazzy.themes.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/moment/moment.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/fullcalendar/fullcalendar.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jquery-idletimer/idle-timer.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/isotope/isotope.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/owl.carousel/owl.carousel.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/chartist/chartist.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/nprogress/nprogress.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jquery-nestable/jquery-nestable.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/store2/store2.js"></script>
+<script src="plugin/mongtree/admin/assets/vendor/jstree/jstree.js"></script>	
+<script src="plugin/mongtree/admin/assets/vendor/jquery-mockjax/jquery.mockjax.js"></script>
+<!-- Admin Extension -->
+<script src="plugin/mongtree/admin/assets/javascripts/theme.admin.extension.js"></script>
+<!-- Admin Extension Examples -->
+<script src="plugin/mongtree/admin/assets/javascripts/tables/examples.datatables.ajax.js"></script>
+<!-- <script src="http://bibin.kr/plugin/mongtree/admin/assets/javascripts/ui-elements/examples.charts.js"></script> -->
+<script src="plugin/mongtree/admin/assets/javascripts/forms/examples.advanced.form.js"></script>
+<script src="plugin/mongtree/admin/assets/javascripts/forms/examples.wizard.js"></script>
+<script src="plugin/mongtree/admin/assets/javascripts/tables/examples.datatables.default.js"></script>
+<script src="plugin/mongtree/admin/assets/javascripts/tables/examples.datatables.row.with.details.js"></script>
+<script src="plugin/mongtree/admin/assets/javascripts/tables/examples.datatables.tabletools.js"></script>
+<!-- Current Page Vendor and Views -->
+<script src="plugin/mongtree/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script src="plugin/mongtree/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="plugin/mongtree/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+<script src="plugin/mongtree/js/views/view.home.js"></script>
+<!-- Theme Custom -->
+<script src="theme/s007/js/custom.js"></script>
+<!-- Theme Initialization Files -->
+<script src="plugin/mongtree/js/theme.init.js"></script>
+<!-- <style>
+	#ChartistCSSAnimation .ct-series.ct-series-a .ct-line {
+		fill: none;
+		stroke-width: 4px;
+		stroke-dasharray: 5px;
+		-webkit-animation: dashoffset 1s linear infinite;
+		-moz-animation: dashoffset 1s linear infinite;
+		animation: dashoffset 1s linear infinite;
+	}
+	#ChartistCSSAnimation .ct-series.ct-series-b .ct-point {
+		-webkit-animation: bouncing-stroke 0.5s ease infinite;
+		-moz-animation: bouncing-stroke 0.5s ease infinite;
+		animation: bouncing-stroke 0.5s ease infinite;
+	}
+	#ChartistCSSAnimation .ct-series.ct-series-b .ct-line {
+		fill: none;
+		stroke-width: 3px;
+	}
+	#ChartistCSSAnimation .ct-series.ct-series-c .ct-point {
+		-webkit-animation: exploding-stroke 1s ease-out infinite;
+		-moz-animation: exploding-stroke 1s ease-out infinite;
+		animation: exploding-stroke 1s ease-out infinite;
+	}
+	#ChartistCSSAnimation .ct-series.ct-series-c .ct-line {
+		fill: none;
+		stroke-width: 2px;
+		stroke-dasharray: 40px 3px;
+	}
+	/* Chartist Skin */
+	.ct-chart .tooltip {
+		background: #0088cc;
+	}
+	.ct-chart .tooltip:after {
+		border-top-color: #0088cc;
+	}
+	.ct-chart .ct-series.ct-series-a .ct-bar,
+	.ct-chart .ct-series.ct-series-a .ct-line,
+	.ct-chart .ct-series.ct-series-a .ct-point,
+	.ct-chart .ct-series.ct-series-a .ct-slice.ct-donut {
+		stroke: #0088cc;
+	}
+	.ct-chart .ct-series.ct-series-a .ct-area,
+	.ct-chart .ct-series.ct-series-a .ct-slice:not(.ct-donut) {
+		fill: #0088cc;
+	}
+	.ct-chart .ct-series.ct-series-b .ct-bar,
+	.ct-chart .ct-series.ct-series-b .ct-line,
+	.ct-chart .ct-series.ct-series-b .ct-point,
+	.ct-chart .ct-series.ct-series-b .ct-slice.ct-donut {
+		stroke: #005580;
+	}
+	.ct-chart .ct-series.ct-series-b .ct-area,
+	.ct-chart .ct-series.ct-series-b .ct-slice:not(.ct-donut) {
+		fill: #005580;
+	}
+	.ct-chart .ct-series.ct-series-i .ct-bar,
+	.ct-chart .ct-series.ct-series-i .ct-line,
+	.ct-chart .ct-series.ct-series-i .ct-point,
+	.ct-chart .ct-series.ct-series-i .ct-slice.ct-donut {
+		stroke: #005580;
+	}
+	.ct-chart .ct-series.ct-series-i .ct-area,
+	.ct-chart .ct-series.ct-series-i .ct-slice:not(.ct-donut) {
+		fill: #005580;
+	}
+	.ct-chart .ct-series.ct-series-j .ct-bar,
+	.ct-chart .ct-series.ct-series-j .ct-line,
+	.ct-chart .ct-series.ct-series-j .ct-point,
+	.ct-chart .ct-series.ct-series-j .ct-slice.ct-donut {
+		stroke: #1ab2ff;
+	}
+	.ct-chart .ct-series.ct-series-j .ct-area,
+	.ct-chart .ct-series.ct-series-j .ct-slice:not(.ct-donut) {
+		fill: #1ab2ff;
+	}
+	.ct-chart .ct-series.ct-series-n .ct-bar,
+	.ct-chart .ct-series.ct-series-n .ct-line,
+	.ct-chart .ct-series.ct-series-n .ct-point,
+	.ct-chart .ct-series.ct-series-n .ct-slice.ct-donut {
+		stroke: #00111a;
+	}
+	.ct-chart .ct-series.ct-series-n .ct-area,
+	.ct-chart .ct-series.ct-series-n .ct-slice:not(.ct-donut) {
+		fill: #00111a;
+	}
+	.ct-chart .ct-series.ct-series-o .ct-bar,
+	.ct-chart .ct-series.ct-series-o .ct-line,
+	.ct-chart .ct-series.ct-series-o .ct-point,
+	.ct-chart .ct-series.ct-series-o .ct-slice.ct-donut {
+		stroke: #80d4ff;
+	}
+	.ct-chart .ct-series.ct-series-o .ct-area,
+	.ct-chart .ct-series.ct-series-o .ct-slice:not(.ct-donut) {
+		fill: #80d4ff;
+	}
+	@-webkit-keyframes dashoffset {
+		0% {
+			stroke-dashoffset: 0px;
+		}
+		100% {
+			stroke-dashoffset: -20px;
+		};
+	}
+	@-moz-keyframes dashoffset {
+		0% {
+			stroke-dashoffset: 0px;
+		}
+		100% {
+			stroke-dashoffset: -20px;
+		};
+	}
+	@keyframes dashoffset {
+		0% {
+			stroke-dashoffset: 0px;
+		}
+		100% {
+			stroke-dashoffset: -20px;
+		};
+	}
+	@-webkit-keyframes bouncing-stroke {
+		0% {
+			stroke-width: 5px;
+		}
+		50% {
+			stroke-width: 10px;
+		}
+		100% {
+			stroke-width: 5px;
+		};
+	}
+	@-moz-keyframes bouncing-stroke {
+		0% {
+			stroke-width: 5px;
+		}
+		50% {
+			stroke-width: 10px;
+		}
+		100% {
+			stroke-width: 5px;
+		};
+	}
+	@keyframes bouncing-stroke {
+		0% {
+			stroke-width: 5px;
+		}
+		50% {
+			stroke-width: 10px;
+		}
+		100% {
+			stroke-width: 5px;
+		};
+	}
+	@-webkit-keyframes exploding-stroke {
+		0% {
+			stroke-width: 2px;
+			opacity: 1;
+		}
+		100% {
+			stroke-width: 20px;
+			opacity: 0;
+		};
+	}
+	@-moz-keyframes exploding-stroke {
+		0% {
+			stroke-width: 2px;
+			opacity: 1;
+		}
+		100% {
+			stroke-width: 20px;
+			opacity: 0;
+		};
+	}
+	@keyframes exploding-stroke {
+		0% {
+			stroke-width: 2px;
+			opacity: 1;
+		}
+		100% {
+			stroke-width: 20px;
+			opacity: 0;
+		};
+	}
+</style> -->
+<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-12345678-1', 'auto');
+	ga('send', 'pageview');
+</script>
+ --><div id="write-form" class="zoom-anim-dialog modal-block mfp-hide" style="max-width:1030px">
+	<section class="panel">
+		<header class="panel-heading">
+			<h2 class="panel-title" id="write-form-title"></h2>
+		</header>
+		<div class="panel-body" style="background:#ECEDF0">
+			<iframe id="write-form-frm" name="write-form-frm" src="" width="100%" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<footer class="panel-footer text-right">
+			<button class="btn btn-default modal-dismiss">닫기</button>
+		</footer>
+	</section>
+</div>
+<div id="write-form-md" class="zoom-anim-dialog modal-block modal-block-md mfp-hide">
+	<section class="panel">
+		<header class="panel-heading">
+			<h2 class="panel-title" id="write-form-title"></h2>
+		</header>
+		<div class="panel-body" style="background:#ECEDF0">
+			<iframe id="write-form-frm"  name="write-form-frm" src="" width="100%" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<footer class="panel-footer text-right">
+			<button class="btn btn-default modal-dismiss">닫기</button>
+		</footer>
+	</section>
+</div>
+<div id="write-form-sm" class="zoom-anim-dialog modal-block modal-block-sm mfp-hide">
+	<section class="panel">
+		<header class="panel-heading">
+			<h2 class="panel-title" id="write-form-title"></h2>
+		</header>
+		<div class="panel-body" style="background:#ECEDF0">
+			<iframe id="write-form-frm"  name="write-form-frm" src="" width="100%" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<footer class="panel-footer text-right">
+			<button class="btn btn-default modal-dismiss">닫기</button>
+		</footer>
+	</section>
+</div>
+<script>
+$(function() {
+	/*
+	Modal with CSS animation
+	*/
+	$('.modal-with-move-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom',
+		modal: true
+	});
+	/*
+		Modalajax
+	*/
+	$('.ajax-modal').magnificPopup({
+		type: 'ajax',
+		modal: true
+	});
+	/*
+	php info Modal iframe
+	*/
+	$('.cf_phpinfo').magnificPopup({
+		type: 'iframe',
+		iframe: {
+		markup: '<div id="custom-content" class="modal-block modal-block-lg"><section class="panel"><div class="panel-body">'+
+			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen style="width:100%;height:400px"></iframe>'+
+			'</div><footer class="panel-footer text-right"><button class="btn btn-default modal-dismiss">창닫기</button></footer></section></div>'
+		}
+	});
+	$('.modal-form').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom',
+		modal: true
+	});
+	$(document).on('click', '.modal-form', function (e) {
+		$('#write-form-title').html($(this).attr("title_txt"));
+		$('#write-form-frm').attr('src', $(this).attr("url"));
+	});
+	/*
+	Modal Dismiss
+	*/
+	$(document).on('click', '.modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+	//닫기 버튼 클릭 후 iframe의 주소를 초기화 시켜줘야 느려지지 않음 kjh
+	$('.modal-dismiss').click(function(){
+		$("#write-form-frm").attr("src","");
+	})
+});
+</script>
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+<center><font size="2">This is the free demo result. For a full version of this website, please go to  <a href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">Website Downloader</a></font></center></body>
+</html>
