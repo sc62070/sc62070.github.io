@@ -23,7 +23,7 @@ function loadScore() {
   popCount = localStorage.getItem("count");
   localStorage.getItem("count") === null
     ? (score.innerText = "Press P or touch to start! ")
-    : (score.innerText = `Your 국밥 Count : ${localStorage.getItem("count")}`);
+    : (score.innerText = `Your GookBap Count : ${localStorage.getItem("count")}`);
 }
 
 function keyDown(event) {
@@ -37,7 +37,7 @@ function keyDown(event) {
     const hidden = document.createElement("span");
     hidden.classList.add("hidden");
     hidden.classList.add("active");
-    hidden.innerText = "섹스";
+    hidden.innerText = "Gook Bap";
     container.appendChild(hidden);
     audio.currentTime = 0;
     audio.play();
@@ -54,12 +54,12 @@ function keyUp(event) {
   if (event.code === "KeyP") {
     popCat.src = "images/normal.png";
     popCount++;
-    score.innerText = `Your 국밥 Count : ${popCount}`;
+    score.innerText = `Your GookBap Count : ${popCount}`;
     saveScore(popCount);
   } else if (event.code === "KeyS") {
     popCat.src = "images/normal.png";
     popCount++;
-    score.innerText = `Your 국밥 Count : ${popCount}`;
+    score.innerText = `Your GookBap Count : ${popCount}`;
     saveScore(popCount);
   }
 }
@@ -73,7 +73,7 @@ function touchStart() {
 function touchEnd() {
   popCat.src = "images/normal.png";
   popCount++;
-  score.innerText = `Your 국밥 Count : ${popCount}`;
+  score.innerText = `Your GookBap Count : ${popCount}`;
   saveScore(popCount);
 }
 
