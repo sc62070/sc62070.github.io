@@ -8,9 +8,9 @@ You can do whatever you want with the code. However if you love my content, you 
 */
 
 :root {
-    --dark-blue: #14007a;
-    --blue: #1a009c;
-    --light-blue: rgb(74, 225, 255);
+    --dark-blue: #000000;
+    --blue: #545454;
+    --light-blue: rgb(255, 255, 255);
     --pink: rgb(255, 40, 113);
 }
 
