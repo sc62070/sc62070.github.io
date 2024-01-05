@@ -1,0 +1,43 @@
+#todo-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: opacity linear 0.8s;
+}
+
+#todo-list {
+  width: 80%;
+}
+
+@keyframes add {
+  to {
+    opacity: 1;
+  }
+}
+.todo-item {
+  padding: 4px 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  animation: add 0.5s linear forwards;
+}
+
+.todo-item__checkbox {
+  all: unset;
+  border: 2px solid whitesmoke;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.todo-item__checkbox:active {
+  opacity: 0.5;
+}
+
+.todo-item__text--done {
+  text-decoration: line-through;
+}

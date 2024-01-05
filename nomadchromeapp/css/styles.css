@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+@import "reset.css";
+@import "components/hidden.css";
+@import "components/text-input.css";
+@import "components/todo.css";
+
+body {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#info-container {
+  width: fit-content;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#clock {
+  font-size: 100px;
+  font-weight: 600;
+}
+
+#name-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity linear 0.8s;
+}
+
+#greeting {
+  transition: opacity linear 0.8s;
+}

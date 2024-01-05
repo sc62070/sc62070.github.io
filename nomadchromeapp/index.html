@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Real-time Clock and To-Do List</title>
-</head>
-<body>
-    <div class="container">
-        <div class="clock-container">
-            <h1 id="clock"></h1>
-        </div>
-        <div class="todo-container">
-            <h2>To-Do List</h2>
-            <ul id="todoList"></ul>
-            <input type="text" id="newTodo" placeholder="Add a new task">
-            <button onclick="addTodo()">Add</button>
-        </div>
-        <div class="weather-container">
-            <h2 id="location"></h2>
-            <h3 id="weather"></h3>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Nomadcoder chrome app</title>
+  </head>
+  <body>
+    <div id="info-container">
+      <h1 id="clock">00:00</h1>
+      <div id="name-container" class="hidden">
+        <h2>What's your name?</h2>
+        <input type="text" class="text-input text-input--center" />
+      </div>
+      <h2 id="greeting" class="hidden"></h2>
+      <div id="todo-container" class="hidden">
+        <h3>What's your goal today?</h3>
+        <input type="text" class="text-input text-input--center" />
+        <ul id="todo-list"></ul>
+      </div>
     </div>
-    <script src="script.js"></script>
-</body>
+    <script src="js/app.js"></script>
+    <script src="js/background-image.js"></script>
+    <script src="js/clock.js"></script>
+  </body>
 </html>
