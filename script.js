@@ -1,17 +1,11 @@
-// portfolio
- $('.gallery ul li a').click(function() {
-     var itemID = $(this).attr('href');
-     $('.gallery ul').addClass('item_open');
-     $(itemID).addClass('item_open');
-     return false;
- });
- $('.close').click(function() {
-     $('.port, .gallery ul').removeClass('item_open');
-     return false;
- });
-
- $(".gallery ul li a").click(function() {
-     $('html, body').animate({
-         scrollTop: parseInt($("#top").offset().top)
-     }, 400);
- });
+$(".custom-carousel").owlCarousel({
+    autoWidth: true,
+    loop: true
+  });
+  $(document).ready(function () {
+    $(".custom-carousel .item").click(function () {
+      $(".custom-carousel .item").not($(this)).removeClass("active");
+      $(this).toggleClass("active");
+    });
+  });
+  
