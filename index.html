@@ -1,136 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HJC | Linktree</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/43749971" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sc62070 Portfolio</title>
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <a id="profilePicture" href="#popup">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbNxl0K%2FbtsMC4nm7Es%2FAAAAAAAAAAAAAAAAAAAAAG1yuzynioIgKeaDCrr0lgll8e42SgYqBSx5Tgd2rAF2%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1759244399%26allow_ip%3D%26allow_referer%3D%26signature%3DQrVa0tZdriJT7us%252FYNVq4zBt9Jk%253D" alt="Profile Picture">
+    </a>
 
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<section class="game-section">
-  <h2 class="line-title">sc62070 Portfolio</h2>
-
-  <div class="owl-carousel custom-carousel owl-theme">
-      
-      <div class="item active"
-           style="background-image: url(./gookbapcat/images/normal.png);">
-          <div class="item-desc">
-              <a href="./gookbapcat/index.html">
-                  <h3>GookBapCat</h3>
-              </a>
-              <p>Start Poppin some GookBapCats</p>
-          </div>
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://telks.tistory.com" target="_blank">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbNxl0K%2FbtsMC4nm7Es%2FAAAAAAAAAAAAAAAAAAAAAG1yuzynioIgKeaDCrr0lgll8e42SgYqBSx5Tgd2rAF2%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1759244399%26allow_ip%3D%26allow_referer%3D%26signature%3DQrVa0tZdriJT7us%252FYNVq4zBt9Jk%253D" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          But... the sensation that I've lost something lingers for a longtime after I wake up.
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
       </div>
-      
-      <div class="item"
-           style="background-image: url(./images/chandler.png);">
-          <div class="item-desc">
-              <a href="./chandlerhug/index.html">
-                  <h3>chandler-hugging-album</h3>
-              </a>
-              <p>Be hugged by Chandler</p>
-          </div>
-      </div>
-      
-      <div class="item"
-           style="background-image: url(./images/af.png);">
-          <div class="item-desc">
-              <a href="./af/animalface.html">
-                  <h3>Animal Face</h3>
-              </a>
-              <p>Upload your selfie and see which Animal face you are.</p>
-          </div>
-      </div>
-      <div class="item"
-           style="background-image: url(./images/casitacnft.jpg);">
-          <div class="item-desc">
-              <a href="./casitacnft/CasitaCNFT.html">
-                  <h3>Casitacnft</h3>
-              </a>
-              <p>First NFT landing page project</p>
-          </div>
-      </div>
-      <div class="item"
-           style="background-image: url(./images/wecomet.png);">
-          <div class="item-desc">
-              <a href="http://www.innocpr.com/">
-                  <h3>Wecomet Project</h3>
-              </a>
-              <p>First PHP webapp that I created in freelance market in Kmong</p>
-          </div>
-      </div>
-	<div class="item"
-           style="background-image: url(./images/suika.png);">
-          <div class="item-desc">
-              <a href="https://https://jeremywatermelon.netlify.app/">
-                  <h3>Suika game</h3>
-              </a>
-              <p>Simple Suika game parody I made out of my friends, especially Kai and Jeremy</p>
-          </div>
-      </div>
-	<div class="item"
-           style="background-image: url(./images/dreamlost.png);">
-          <div class="item-desc">
-              <a href="https://dreamswelost.netlify.app">
-                  <h3>What is a dream you gave up?</h3>
-              </a>
-              <p>survey + vote system using firebase database</p>
-          </div>
-      </div>
-	  <div class="item"
-           style="background-image: url(./images/drskin.png);">
-          <div class="item-desc">
-              <a href="https://drskin.netlify.app">
-                  <h3>Dr.Skin</h3>
-              </a>
-              <p>Using LLM Google's Gemini, it will identify whether you have mole or cancer skin</p>
-          </div>
-      </div>
-	  <div class="item"
-           style="background-image: url(./images/therapyai.png);">
-          <div class="item-desc">
-              <a href="https://therapyai.netlify.app">
-                  <h3>Therapy AI</h3>
-              </a>
-              <p>Using LLM Google's Gemini, it will therapy you</p>
-          </div>
-      </div>
-      
-  </div>
-</section>
+    </div>
 
-<!-- Google adsense-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3187370930413699"
-     crossorigin="anonymous"></script>
-	
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div id="userName">
+      @Hyuk Jin Choi
+    </div>
 
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <div id="links">
+      <a class="link" href="https://github.com/sc62070" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+      <a class="link" href="https://www.quizzment.com" target="_blank">
+        <i class="fas fa-globe">&nbsp;</i>Quizzment.com
+      </a>
+      <a class="link" href="https://telks.tistory.com" target="_blank">
+        <i class="fas fa-globe">&nbsp;</i>telks.tistory.com
+      </a>
+    </div>
 
-  <script src="script.js"></script>
-  <!--kakao adfit-->
-<div>
-	<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-WGDtPYmksVMXRXAD" data-ad-width="320"
-	data-ad-height="100"></ins>
-	<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-</div> 
-
-</body>
-
-</html>
-			
- 
-  
-</body>
+    <div id="hashtag">
+      #Subscribe❤
+    </div>
+  </body>
 </html>
